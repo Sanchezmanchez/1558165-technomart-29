@@ -1,0 +1,584 @@
+/*Variables*/
+
+:root{
+  --basic-black:#000000;
+  --basic-dark:#32425C;
+  --basic-extra-dark:#293449;
+  --basic-neutral:#F9F5F0;
+  --basic-grey:#f1f5f7;
+  --basic-light-grey:#c5c5c5;
+  --basic-white:#ffffff;
+  --basic-green:#63a63e;
+  --basic-greenlight:#5FBB2D;
+  --basic-dark-green:#518534;
+  --basic-red:#EE3643;
+  --basic-light-red:#ff5357;
+
+  --basic-extra:#FFDA96;
+
+  --special-purple:#DC91D8;
+  --special-blue:#3BBCE3;
+  --special-greenlight:#8ED78F;
+  --special-yellow:#ffbf47;
+  --special-extra-yellow:#FFC047;
+}
+
+/*Global*/
+
+body{
+  min-width: 940px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", Arial , sans-serif;
+  background-color: var(--basic-white);
+}
+
+.page a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/*Main header*/
+
+.main-header{
+  background-color:var(--basic-grey);
+}
+
+.main-header-bar{
+  font-size: 18px;
+  background-color: var(--basic-extra-dark);
+}
+
+.header-description{
+  color: var(--basic-red);
+  font-family: "Cuprum" , Arial , sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.main-header-phone{
+  font-size:21px;
+  font-weight: bold;
+  line-height: 30px;
+  color: var(--basic-red);
+  border: 3px solid var(--basic-white);
+}
+
+.main-header-adress{
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-dark);
+}
+
+.header-description{
+  color: var(--basic-red);
+  font-family: "Cuprum" , Arial , sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+/*Поле поиска*/
+
+.main-header-src{
+  background-color: var(--basic-extra-dark);
+  color: var(--basic-white);
+  outline: none;
+  border: none;
+}
+
+.main-header-src::placeholder{
+  color: var(--basic-white);
+}
+
+.main-header-src:focus::placeholder ,
+.main-header-src:focus{
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+/*Header buttons*/
+
+.header-button{
+    font: inherit;
+    color: var(--basic-white);
+    background-color: inherit;
+    border:none;
+    text-align: center;
+    vertical-align: middle;
+    outline: none;
+}
+
+
+.header-button:active{
+  color:rgba(255,255,255,0.5);
+  background-color: #161D29;
+}
+
+.order {
+  background-color:var(--basic-green);
+}
+
+.order:hover {
+  background-color: #5FBB2D;
+}
+
+.user-link{
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+  background-color:var(--basic-white);
+}
+
+.user-link:hover{
+  color: var(--basic-red);
+}
+
+.user-link:active{
+  color:var(--basic-light-grey);
+}
+
+/*Main navigation*/
+
+.main-navigation{
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  background-color:var(--basic-grey);
+}
+
+.site-navigation{
+  list-style: none;
+  display: inline-block;
+  width: 940px;
+  height: 60px;
+  background-color:var(--basic-dark);
+}
+
+.site-navigation-item{
+  display: inline;
+}
+
+.site-navigation a{
+  color: var(--basic-white);
+}
+
+.site-navigation-item:hover{
+  background-color: var(--basic-extra-dark);
+}
+
+.site-navigation-item:active,
+.site-navigation-item:active a{
+  background-color: #1D2739 ;
+  color:rgba(255,255,255,0.5);
+}
+
+/*main index*/
+
+.offers-item{
+  list-style: none;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-white);
+  width: 300px;
+  height: 123px;
+}
+
+.offers-item-materials{
+  background-color:var(--special-yellow);
+}
+
+.offers-item-tools{
+  background-color:var(--special-blue);
+}
+
+.offers-item-technics{
+  background-color:var(--special-purple);
+}
+
+.offers-item-sale{
+ background-color:var(--special-greenlight);
+}
+
+.offers-item-delivery{
+  background-color: var(--special-extra-yellow);
+}
+
+.offers-link{
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color:rgba(255,255,255,0.3);
+  color: var(--basic-white);
+}
+
+.offers-link:hover{
+  background-color: rgba(197, 197, 197, 0.3);
+}
+
+.offers-link:active{
+  background-color: rgba(169, 169, 169, 0.3);
+}
+
+/*Slider*/
+
+.slide-title{
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+  text-transform: uppercase;
+  color:var(--basic-white);
+}
+
+.slide-text{
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
+
+.slider-item{
+  background-image: url(../img/perforator-slide.jpg);
+  background-repeat: no-repeat;
+  height: 240px;
+}
+
+/*button*/
+
+.button{
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+
+}
+
+.button:hover{
+  background-color: #CA2C37;
+}
+
+.button:active{
+  background-color: #BA2732;
+}
+
+.title-bar{
+  background-color: #F9F5F0;
+}
+
+.title-bar h2{
+  font-size:30px;
+  line-height: 30px;
+  color:#32425C;
+  text-transform: uppercase;
+}
+
+/*Карточка продукта*/
+
+.products-item{
+  list-style: none;
+}
+
+.products-container{
+  height: 318px;
+  width: 220px;
+  border: 1px solid #EAEAEA;
+  text-align: center;
+}
+
+.products-item{
+  font-family: "PT Sans", Arial , sans-serif;
+  margin-bottom: 20px;
+}
+
+.products-item h3{
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.products-item s{
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #a9a9a9;
+}
+
+.products-button{
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+
+  height: 38px;
+  min-width: 141px;
+
+  color: var(--basic-white);
+
+  outline: none;
+  border:none;
+  border-radius: 3px;
+
+  background-color: var(--basic-red);
+  background-image:
+    linear-gradient(45deg, transparent  11% , transparent  89%, white 89%),
+    linear-gradient(135deg, transparent  11% , transparent  89%, white 89%);
+}
+
+.products-container:hover{
+   box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+}
+
+/*products button*/
+
+.products-hidden-button{
+  font-family: "Cuprum" , Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  border: none;
+  outline: none;
+
+  height: 38px;
+  width: 135px;
+  border-radius: 2px;
+}
+
+.products-button-buy{
+ color: var(--basic-white);
+ background-color: var(--basic-green);
+ box-shadow: inset 0px -3px #367315;
+ margin-bottom: 10px;
+}
+
+.products-button-buy:hover{
+  background-color:var(--basic-greenlight);
+}
+
+.products-button-buy:active{
+  background-color: var(--basic-dark-green);
+}
+
+.products-button-list{
+  background-color: var(--basic-white);
+  border: 3px solid var(--basic-green);
+  color: var(--basic-dark);
+}
+
+.products-button-list:hover{
+  border: 3px solid var(--basic-dark);
+}
+
+.products-button-list:active{
+  border: 3px solid var(--basic-dark);
+  opacity: 0.5;
+}
+
+/*Карточки производителей*/
+.manufacturers-item{
+  list-style: none;
+
+}
+
+.manufacturers-item-link{
+  display: block;
+  height: 145px;
+  width: 220px;
+  border: 1px solid #EAEAEA;
+}
+.manufacturers-item-link:hover,
+.manufacturers-item-link:active {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.manufacturers-item-link:active{
+  opacity: 0.5;
+}
+
+/*Сервисы*/
+
+.services{
+  background-color: var(--basic-grey);
+}
+
+.services-title{
+  font-family:inherit;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.services-text{
+  font-family: "PT Sans" , Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.services-slide-title{
+  font-family:inherit;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-dark);
+}
+
+.services-slide-description{
+  font-family: "PT Sans" , Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.services-item{
+  list-style: none;
+}
+
+.services-button{
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+
+  width: 240px;
+  height: 60px;
+
+  color: var(--basic-white);
+  background-color:var(--basic-dark);
+  border: none;
+  outline: none;
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+}
+
+.services-button:hover{
+  background-color: var(--basic-extra-dark);
+}
+
+.services-button:focus{
+  background-color: var(--basic-white);
+  color:var(--basic-dark);
+  box-shadow: 0px 1px 0px var(--basic-white), inset 0px 1px 0px var(--basic-white);
+}
+
+.services-slide-link{
+  background-color: var(--basic-light-red);
+  border-radius: 2px;
+}
+
+.about-title{
+  font-family:inherit;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.contacts-title{
+  font-family:inherit;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.about-text,
+.about-subtext{
+  font-family: "PT Sans" , Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.about-item{
+  list-style: none;
+  color:var(--basic-black);
+  font-family: inherit;
+}
+
+.about-item::before{
+  position: absolute;
+  left: 7px;
+  content: "";
+  height: 2px;
+  width: 25px;
+  background-color: var(--basic-red);
+  margin-top: 8px;
+}
+
+
+/*footer*/
+
+.page-footer{
+  background-color: var(--basic-dark);
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-contacts,
+.footer-phone{
+  color:#F3F7F9;
+}
+
+.page-footer li{
+  list-style: none;
+}
+
+.footer-nav-item a{
+  color: #F3F7F9;
+}
+
+.footer-nav-item a{
+  color: #F3F7F9;
+}
+
+.footer-nav-sub-item a{
+    color: var(--basic-extra);
+}
+
+.footer-nav-item a:hover,
+.footer-nav-sub-item a:hover{
+  text-decoration: underline;
+}
+
+.footer-nav-item a:active,
+.footer-nav-sub-item a:active{
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.footer-bar{
+  background-color: var(--basic-extra-dark);
+}
+
+.footer-copyright p{
+  color: var(--basic-white);
+  font-size: 16px;
+}
+
+.footer-feedback{
+  color: var(--basic-white);
+  font-size: 16px;
+}
+
+.footer-feedback-link{
+  color: var(--basic-extra);
+}
+
+.footer-feedback-link:hover{
+  text-decoration: underline;
+}
+
+.footer-feedback-link:active{
+  text-decoration: none;
+  color:var(--basic-red);
+}
