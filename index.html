@@ -46,7 +46,7 @@
     </nav>
   </header>
 
-  <main class="container">
+  <main class="container page-main">
 
     <h1 class="main-title"> Интернет-магазин Техномарт</h1>
 
@@ -108,9 +108,8 @@
       <ul class="products-list">
         <li class="products-item">
           <div class="products-container">
-            <p>
-              <img class="products-image" src="#" alt="BOSCH BFG9000">
-            </p>
+            <img class="products-image" src="img/bfg9000.jpg" alt="BOSCH BFG9000"
+              width="184px" height="100px">
             <button class="products-hidden-button products-button-buy" type="button">Купить</button>
             <button class="products-hidden-button products-button-list" type="button">В закладки</button>
             <h3>Перфоратор BOSCH BFG 9000</h3>
@@ -252,7 +251,24 @@
         </div>
       </div>
     </section>
-
+    <section class="visually-hidden modal-write-us">
+      <button class="modal-button-close" type="button">Закрыть</button>
+      <!-- Форма Имя - Фамилия, мейл, Текст письма -->
+      <form action="#" method="POST">
+        <label for="modal-name">Ваше имя:</label>
+        <input type="text" id="modal-name" value="Имя Фамилия">
+        <label for="modal-email">Ваш e-mail:</label>
+        <input type="email" id="modal-email" value="email@example.com">
+        <label for="modal-letter">Текст письма:</label>
+        <input type="text" id="modal-letter" value="В свободной форме">
+        <input class="modal-button-submit button" type="submit">
+      </form>
+    </section>
+    <section class="visually-hidden modal-map">
+      <!-- Модальное окно карты-->
+      <img src="img/map.png" alt="Адрес компании техномарт">
+      <button class="modal-button-close" type="button">Закрыть</button>
+    </section>
     <section class="about">
       <h2 class="about-title">Компания "Техномарт"</h2>
       <p class="about-text">
@@ -340,17 +356,5 @@
       </p>
     </div>
   </footer>
-
-  <section class="modal">
-    <button class="modal-button-close" type="button">Закрыть</button>
-    <!-- Форма Имя - Фамилия, мейл, Текст письма -->
-    <button class="modal-button-submit" type="submit">Отправить</button>
-  </section>
-
-  <section class="modal">
-    <!-- Модальное окно карты-->
-    <button class="modal-button-close" type="button">Закрыть</button>
-  </section>
 </body>
-
 </html>
