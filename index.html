@@ -62,13 +62,13 @@
       </div>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li class="site-navigation-item"><a>Главная</a></li>
-          <li class="site-navigation-item"><a href="blank.html">Компания</a></li>
-          <li class="site-navigation-item"><a href="catalog.html">Каталог</a></li>
-          <li class="site-navigation-item"><a href="blank.html">Новости</a></li>
-          <li class="site-navigation-item"><a href="blank.html">Спецпредложения</a></li>
-          <li class="site-navigation-item"><a href="blank.html">Доставка</a></li>
-          <li class="site-navigation-item"><a href="blank.html">Контакты</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link">Главная</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="blank.html">Компания</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="catalog.html">Каталог</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="blank.html">Новости</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="blank.html">Спецпредложения</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="blank.html">Доставка</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="blank.html">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -95,13 +95,13 @@
       </ul>
       <div class="slider">
         <ul class="slider-list">
-          <li class="slider-item slide">
+          <li class="slider-item slide slide-current">
             <h3 class="slide-title">Перфораторы</h3>
             <p class="slide-text">Настоящие мужские игрушки</p>
             <a href="catalog.html" class="slide-link button">Открыть каталог</a>
             <img src="img/perforator-slide.jpg" alt="Мужчина с перфоратором" width="620" height="266">
           </li>
-          <li class="slider-item slide-current">
+          <li class="slider-item slide ">
             <h3 class="slide-title">Дрели</h3>
             <p class="slide-text">Соседям на радость!</p>
             <a href="catalog.html" class="slide-link button">Открыть каталог</a>
@@ -132,7 +132,7 @@
     </section>
 
     <section class="products container">
-      <div class="title-bar">
+      <div class="title-bar popular-products-title-bar">
         <h2>Популярные товары:</h2>
         <a class="title-link button" href="blank.html">Все популярные товары</a>
       </div>
@@ -148,39 +148,44 @@
           <button type="button" class="products-button"> 25500 P.</button>
         </li>
         <li class="products-item  mark-new">
-          <img class="products-image" src="img/bfg9000.jpg" alt="BOSCH BFG9000" width="184" height="164">
+          <div class="products-image-wrapper">
+            <img class="products-image" src="img/bfg2000.png" alt="BOSCH BFG3000" width="127" height="112">
+          </div>
           <div class="products-container">
             <button class="products-hidden-button products-button-buy" type="button">Купить</button>
             <button class="products-hidden-button products-button-list" type="button">В закладки</button>
           </div>
-          <h3>Перфоратор BOSCH BFG&nbsp;9000</h3>
-          <p><s>32500 Р.</s></p>
-          <button type="button" class="products-button"> 25500 P.</button>
+          <h3>Перфоратор BOSCH BFG&nbsp;3000</h3>
+          <p><s>22500 Р.</s></p>
+          <button type="button" class="products-button"> 15500 P.</button>
         </li>
         <li class="products-item">
-          <img class="products-image" src="img/bfg9000.jpg" alt="BOSCH BFG9000" width="184" height="164">
+          <div class="products-image-wrapper">
+            <img class="products-image" src="img/bfg6000.png" alt="BOSCH BFG6000" width="144" height="128">
+          </div>
           <div class="products-container">
             <button class="products-hidden-button products-button-buy" type="button">Купить</button>
             <button class="products-hidden-button products-button-list" type="button">В закладки</button>
           </div>
-          <h3>Перфоратор BOSCH BFG&nbsp;9000</h3>
-          <p><s>32500 Р.</s></p>
+          <h3>Перфоратор BOSCH BFG&nbsp;6000</h3>
+          <p><s>30500 Р.</s></p>
           <button type="button" class="products-button"> 25500 P.</button>
         </li>
         <li class="products-item mark-new">
-          <img class="products-image" src="img/bfg9000.jpg" alt="BOSCH BFG9000" width="184" height="164">
+          <div class="products-image-wrapper">
+            <img class="products-image" src="img/bfg2000.png" alt="BOSCH BFG2000" width="127" height="112">
+          </div>
           <div class="products-container">
             <button class="products-hidden-button products-button-buy" type="button">Купить</button>
             <button class="products-hidden-button products-button-list" type="button">В закладки</button>
           </div>
-          <h3>Перфоратор BOSCH BFG&nbsp;9000</h3>
-          <p><s>32500 Р.</s></p>
+          <h3>Перфоратор BOSCH BFG&nbsp;2000</h3>
           <button type="button" class="products-button"> 25500 P.</button>
         </li>
       </ul>
     </section>
     <section class="manufacturers container">
-      <div class="title-bar">
+      <div class="title-bar popular-manufacturers-title-bar">
         <h2>Популярные производители:</h2>
         <a class="title-link button" href="blank.html">Все производители</a>
       </div>
@@ -280,24 +285,24 @@
     <!-- Форма Имя - Фамилия, мейл, Текст письма -->
     <section class="modal-write-us">
       <button class="modal-button-close" type="button" aria-label="Закрыть"></button>
-        <form action="#" method="POST">
+      <form action="#" method="POST">
+        <div class="modal-container">
+          <label class="modal-label" for="modal-name">Ваше имя:<br>
+            <input class="modal-input modal-input-name" type="text" id="modal-name" placeholder="Имя Фамилия">
+          </label>
+          <label class="modal-label" for="modal-email">Ваш e-mail:<br>
+            <input class="modal-input modal-input-email" type="email" id="modal-email" placeholder="email@example.com">
+          </label>
+          <label class="modal-label" for="modal-letter">Текст письма:
+            <textarea class="modal-input modal-input-letter" id="modal-letter" placeholder="В свободной форме" rows="5"></textarea>
+          </label>
+        </div>
+        <div class="modal-button-wrapper">
           <div class="modal-container">
-            <label class="modal-label" for="modal-name">Ваше имя:<br>
-              <input class="modal-input modal-input-name" type="text" id="modal-name" placeholder="Имя Фамилия">
-            </label>
-            <label class="modal-label" for="modal-email">Ваш e-mail:<br>
-              <input class="modal-input modal-input-email" type="email" id="modal-email" placeholder="email@example.com">
-            </label>
-            <label class="modal-label" for="modal-letter">Текст письма:
-              <textarea class="modal-input modal-input-letter"  id="modal-letter" placeholder="В свободной форме" rows="5" ></textarea>
-            </label>
+            <input class="modal-button-submit button" type="submit">
           </div>
-          <div class="modal-button-wrapper">
-            <div class="modal-container">
-              <input class="modal-button-submit button" type="submit" >
-            </div>
-          </div>
-        </form>
+        </div>
+      </form>
     </section>
     <!-- Модальное окно карты-->
     <section class="modal-map">
@@ -333,7 +338,7 @@
         <a class="contacts-link" href="#">
           <img class="" src="img/map.png" alt="карта проезда">
         </a>
-        <a class="contacts-feedback-link button" href="#">Заблудились?Напишите нам!</a>
+        <a class="contacts-feedback-link button" href="#">Заблудились? Напишите нам!</a>
       </div>
     </section>
   </main>
@@ -408,13 +413,12 @@
           <a class="footer-feedback-link" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p class="footer-feedback">
-          Разработано -<br>
-          <a class="footer-feedback-link" href="https://htmlacademy.ru">htmlacademy.ru</a>
+          Разработано —<br>
+          <a class="footer-feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>
