@@ -840,10 +840,11 @@ h3+.products-button {
   position: relative;
 }
 
-.services-slide-credit,
-.services-slide-garanty {
+.services-slide-hidden {
   display: none;
 }
+
+
 
 .services-slide-delivery::after {
   position: absolute;
@@ -1119,7 +1120,7 @@ h3+.products-button {
   background-color: var(--basic-red);
 }
 
-.social-link svg {}
+
 
 .footer-feedback {
   margin: 0px auto;
@@ -1700,11 +1701,13 @@ h3+.products-button {
 }
 
 /*Modal*/
-.modal-map, .modal-write-us {
+.modal-map,
+.modal-write-us {
   display: none;
 }
 
-.modal-write-us, .modal-map {
+.modal-write-us,
+.modal-map {
   position: fixed;
   z-index: 123;
   left: 20%;

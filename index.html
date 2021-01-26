@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -244,13 +244,13 @@
         <div class="services-grid-inner">
           <ul class="services-list">
             <li class="services-item">
-              <button class="services-button" type="button" autofocus>Доставка</button>
+              <button class="services-button delivery-button" type="button" >Доставка</button>
             </li>
             <li class="services-item ">
-              <button class="services-button" type="button">Гарантия</button>
+              <button class="services-button garanty-button" type="button">Гарантия</button>
             </li>
             <li class="services-item">
-              <button class="services-button" type="button">Кредит</button>
+              <button class="services-button credit-button" type="button">Кредит</button>
             </li>
           </ul>
           <div class="services-slide  services-slide-delivery">
@@ -262,7 +262,7 @@
               поднимая его на ваш этаж!
             </p>
           </div>
-          <div class="services-slide  services-slide-garanty">
+          <div class="services-slide  services-slide-garanty services-slide-hidden">
             <h3 class="services-slide-title">Гарантия</h3>
             <p class="services-slide-description">
               Если купленный у нас товар поломается или заискрит,<br>
@@ -272,7 +272,7 @@
               Дом уж восстановите как-нибудь сами.
             </p>
           </div>
-          <div class="services-slide  services-slide-credit">
+          <div class="services-slide  services-slide-credit services-slide-hidden">
             <h3 class="services-slide-title">Кредит</h3>
             <p class="services-slide-description">
               Залезть в долговую яму стало проще!<br>
@@ -420,6 +420,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/services-slide.js"></script>
 </body>
 
 </html>
