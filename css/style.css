@@ -95,6 +95,7 @@ img {
 }
 
 .page-body {
+
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -978,7 +979,7 @@ h3+.products-button {
   margin-bottom: 32px;
 }
 
-.contacts-feedback-link {
+.contacts-feedback-button {
   margin-top: 23px;
   width: 100%;
 }
@@ -1701,16 +1702,9 @@ h3+.products-button {
 }
 
 /*Modal*/
-.modal-map,
-.modal-write-us {
-  display: none;
-}
 
-.modal-write-us,
-.modal-map {
-  position: fixed;
-  z-index: 123;
-  left: 20%;
+.modal-closed {
+  display: none;
 }
 
 .modal-container {
@@ -1731,8 +1725,21 @@ h3+.products-button {
   padding: 37px 0;
 }
 
-.modal-write-us {
+.modal-bg {
   position: absolute;
+  background-color: #283136;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  z-index: 4;
+  opacity: 0.4;
+}
+
+.modal-write-us {
+  position: fixed;
+  z-index: 123;
+  left: 35%;
+  top: 20%;
   text-align: center;
   width: 620px;
   padding-top: 35px;
